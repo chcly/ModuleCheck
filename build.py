@@ -162,11 +162,11 @@ class GitHubAccount:
             rn = self.repoBaseName(repo)
 
             print("")
-            print(c.y + "  Pulling repository ", c.g0, repo.ssh_url, c.reset)
+            print(c.y + "  Pulling repository ", c.g0, repo.html_url, c.reset)
             print("")
             print("")
 
-            repos.run(self.CLONE_CMD % (repo.ssh_url, rn))
+            repos.run(self.CLONE_CMD % (repo.html_url, rn))
             print("")
             print(c.y + "  Executing git update", c.reset)
             print("")
