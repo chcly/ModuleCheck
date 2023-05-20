@@ -44,8 +44,8 @@ Attempts to clone, pull, and update sub-modules in the repository list.
 
 ### Config
 
-Runs CMake configure on all repositories.
-It defines the test options `-D{RepoName}_BUILD_TEST=ON -D{RepoName}_AUTO_RUN_TEST=ON`
+- Runs CMake configure on all repositories.
+- It defines the test options `-D{RepoName}_BUILD_TEST=ON -D{RepoName}_AUTO_RUN_TEST=ON`
 
 ```sh
 ./build config
@@ -61,8 +61,8 @@ Executes the CMake build option on all repositories.
 
 ### Sync
 
-Same as pull, except that once the local repository is updated it commits it back
-to GitHub. It also cleans the local repo before attempting to synchronize to prevent local conflicts.  
+- Same as pull, except that once the local repository is updated it commits it back to GitHub.
+- `Note` It deletes the local repo directory before attempting to synchronize to prevent local conflicts.  
 
 
 ```sh
